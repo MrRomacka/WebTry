@@ -1,0 +1,24 @@
+{
+  "astronaut": [
+    {
+      "name": "Dana Scalli",
+      "photo": "https://pbs.twimg.com/media/EEX3EVnW4Ako83w.jpg",
+      "specializations": "Astrogeolog, Mulder's wife, khz kto eshcho"
+    },
+    {
+      "name": "Fox Mulder",
+      "photo": "https://dvdbash.files.wordpress.com/2013/01/x-files-s6-duchovny-mulder-anderson-scully-spender-lone-gunmen-dvdbash-wordpress07.jpg",
+      "specializations": "He is added for fan, really"
+    },
+    {
+      "name": "Mark Watney",
+      "photo": "https://upload.wikimedia.org/wikipedia/en/c/cd/The_Martian_film_poster.jpg",
+      "specializations": "Batka's son, KAPTOXA Cnac/a E7O"
+    },
+    {
+     "name": "Joseph Cooper",
+      "photo": "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
+      "specializations": "Nolan said, it will be fast"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="V_FlaskTry/static/css/style.css">
+    <title>Отбор астронавтов</title>
+    </head>
+    <body>
+    <h1>Анкета претендента</h1>
+    <h2>на участие в миссии</h2>
+    <div>
+        <form class="login_form" method="post">
+            <div class="form-group">
+                <input type="text" class="form-control" id="first_name" placeholder="Введите имя" name="first_name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="last_name" placeholder="Введите фамилию" name="last_name">
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Введите адрес почты" name="email">
+            </div>
+            <div class="form-group">
+                <label>Какое у Вас образование?</label>
+                <select class="form-control" id="classSelect" name="class">
+                    <option>Начальное</option>
+                    <option>Среднее</option>
+                    <option>Высшее</option>
+                </select>
+            </div>
+            <label>Какие у Вас профессии?<br></label>
+            <div class="form-group">
+                <input type="checkbox" class="form-group-input" id="work1" name="work1">
+                <label class="form-group-label" for="work1">Инженер-исследователь</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" class="form-group-input" id="work2" name="work2">
+                <label class="form-group-label" for="work2">Инженер-строитель</label>
+            </div>
+            <div class="form-group">
+                <label>Укажите пол</label>
+                <div class="form-group">
+                  <input class="form-group-input" type="radio" name="sex" id="male" value="male" checked>
+                  <label class="form-group-label" for="male">
+                    Мужской
+                  </label>
+                </div>
+                <div class="form-group">
+                  <input class="form-group-input" type="radio" name="sex" id="female" value="female">
+                  <label class="form-group-label" for="female">
+                    Женский
+                  </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="about">Почему Вы хотите принять участие в миссии?</label>
+                <textarea class="form-control" id="about" rows="3" name="about"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="photo">Приложите фотографию</label>
+                <input type="file" class="form-control-file" id="photo" name="file">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" class="form-group-input" id="accept" name="accept">
+                <label class="form-group-label" for="accept">Готовы остаться на Марсе?</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Записаться</button>
+        </form>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 align="center">Оформление каюты</h1>
+        <h3></h3>
+        <table class="table">
+            {% if sex == 'male' and age < 21 %}
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">Цвет стен {sex}</th>
+                <th scope="col">"Житель"</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td bgcolor="#008b8b"></td>
+                <td bgcolor="#008b8b"><img src="https://c7.hotpng.com/preview/54/3/745/alien-black-and-white-clip-art-alien.jpg"></td>
+            </tr>
+            </tbody>
+            {% endif %}
+            {% if sex == 'male' and age >= 21 %}
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Цвет стен</th>
+                    <th scope="col">"Житель"</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td bgcolor="#e0ffff"></td>
+                <td bgcolor="#e0ffff"><img src="http://getdrawings.com/colorings/xenomorph-coloring-pages-12.jpg"></td>
+            </tr>
+            </tbody>
+            {% endif %}
+            {% if sex == 'female' and age < 21 %}
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Цвет стен</th>
+                    <th scope="col">"Житель"</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td bgcolor="#ffa07a"></td>
+                <td bgcolor="#ffa07a"><img src="http://clipart-library.com/images/kiKnp7X4T.jpg"></td>
+            </tr>
+            </tbody>
+            {% endif %}
+            {% if sex  == 'female' and age >= 21 %}
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">Цвет стен {sex}</th>
+                <th scope="col">"Житель"</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td bgcolor="#e9967a"></td>
+                <td bgcolor="#e9967a"><img src="https://pbs.twimg.com/media/EEX3EVnW4Ako83w.jpg"></td>
+            </tr>
+            </tbody>
+            {% endif %}
+        </table>
+{% endblock %}
